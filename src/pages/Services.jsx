@@ -13,6 +13,7 @@ import heroImg from "../assets/services/servicehero1.png";
 import servicesData from "../components/data/servicesData";
 import Reveal from "../components/ui/Reveal";
 import ServiceSection from "../components/services/ServiceSection";
+import AmenitiesSection from "../components/services/AmenitiesSection";
 import WhyChoose from "../components/home/WhyChoose";
 import ContactSection from "../components/home/ContactSection";
 import InteriorSection from "../components/home/InteriorSection";
@@ -141,6 +142,7 @@ export default function Services() {
 
       {/* ================= ADDITIONAL SECTIONS ================= */}
       <InteriorSection />
+      <AmenitiesSection />
       <WhyChoose heroImg={heroImg} />
       <ContactSection />
     </>
