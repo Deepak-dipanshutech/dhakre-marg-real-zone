@@ -51,9 +51,9 @@ export default function ServiceSection({ service, index }) {
             {service.description}
           </p>
 
-          {/* What We Offer */}
+          {/* Features list */}
           <h4 className="text-lg font-serif font-semibold text-brand mt-7 mb-4">
-            What We Offer
+            {service.featuresLabel || "What We Offer"}
           </h4>
           <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
             {service.features.map((f, i) => (
@@ -69,9 +69,9 @@ export default function ServiceSection({ service, index }) {
             ))}
           </ul>
 
-          {/* Facilities */}
+          {/* Facilities list */}
           <h4 className="text-lg font-serif font-semibold text-brand mt-6 mb-3">
-            Facilities
+            {service.facilitiesLabel || "Facilities"}
           </h4>
           <ul className="flex flex-wrap gap-2">
             {service.facilities.map((f, i) => (

@@ -83,27 +83,40 @@ const servicesData = [
     id: 2,
     slug: "premium-flats",
     number: "02",
-    title: "Premium Flats",
+    title: "Premium Flats & Apartments",
 
     banner: residentialBanner,
 
     images: [residentialBanner, residentialBanner, residentialBanner],
 
-    shortDescription: "Luxury apartments in top societies.",
+    shortDescription: "Luxury and affordable flats in top societies.",
 
     description:
-      "2BHK, 3BHK and 4BHK premium apartments with modern amenities and excellent connectivity.",
+      "From luxury high-rises to affordable homes, find premium flats and apartments in Greater Noida's most sought-after societies. Choose from 2BHK, 3BHK and 4BHK options with modern amenities, excellent connectivity and trusted builders — ready to move or under construction.",
 
+    featuresLabel: "Available In",
     features: [
-      "Club House",
-      "Swimming Pool",
+      "Jaypee Greens",
+      "Eldeco",
+      "Supertech",
+      "Gaur Atulyam",
+      "ATS Projects",
+      "United Horizon",
+      "Migsun Twinz",
+      "Purvanchal Royal City",
+    ],
+
+    facilitiesLabel: "Amenities",
+    facilities: [
+      "Clubhouse",
+      "Swimming pool",
       "Gym",
       "Park",
       "Security",
-      "Power Backup",
+      "Parking",
+      "Lift",
+      "Power backup",
     ],
-
-    facilities: ["Ready To Move", "Lift", "Covered Parking", "Children Park"],
   },
 
   {
