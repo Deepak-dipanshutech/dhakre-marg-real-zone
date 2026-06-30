@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -64,17 +65,12 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.div variants={fadeUp}>
-            <a
-              href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfdiOf-j24TtIlf0W3OPypPyC0jVb4XS5oq-P6B2AWuKfHqUNBbhXpL0r62vqdELp8AAdpJVske4Wj/pubhtml?gid=0&single=true"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary group"
-            >
+            <Link to="/properties" className="btn-primary group">
               <span>Home's List</span>
               <div className="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center group-hover:rotate-45 transition-transform">
                 <FiArrowUpRight size={16} />
               </div>
-            </a>
+            </Link>
           </motion.div>
         </div>
 
