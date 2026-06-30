@@ -12,6 +12,7 @@ import {
 import heroImg from "../assets/services/servicehero1.png";
 import servicesData from "../components/data/servicesData";
 import Reveal from "../components/ui/Reveal";
+import ServiceSection from "../components/services/ServiceSection";
 import WhyChoose from "../components/home/WhyChoose";
 import ContactSection from "../components/home/ContactSection";
 import InteriorSection from "../components/home/InteriorSection";
@@ -119,71 +120,26 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ================= SERVICES GRID ================= */}
-      <section className="bg-cream py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Heading */}
-          <Reveal className="text-center mb-14">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <span className="h-[2px] w-10 bg-gold rounded-full" />
-              <span className="eyebrow">What We Offer</span>
-              <span className="h-[2px] w-10 bg-gold rounded-full" />
-            </div>
-            <h2 className="text-4xl font-serif font-bold text-ink">
-              Our Premium <span className="text-brand">Services</span>
-            </h2>
-            <p className="text-ink-soft mt-3">
-              Explore complete real estate solutions tailored for you
-            </p>
-          </Reveal>
-
-          {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesData.map((item, i) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.15 }}
-                transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
-              >
-                <Link
-                  to={`/services/${item.slug}`}
-                  className="group block bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-2xl transition border border-cream-dark h-full"
-                >
-                  {/* Image */}
-                  <div className="h-56 overflow-hidden">
-                    <img
-                      src={item.banner}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    <p className="text-sm text-gold font-semibold">
-                      {item.number}
-                    </p>
-
-                    <h3 className="text-xl font-serif font-semibold mt-1 text-ink">
-                      {item.title}
-                    </h3>
-
-                    <p className="text-ink-soft mt-2 text-sm">
-                      {item.shortDescription}
-                    </p>
-
-                    <span className="inline-flex items-center gap-1 text-brand font-medium mt-4 group-hover:gap-2 transition-all">
-                      View Details →
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
+      {/* ================= PREMIUM SERVICES (stacked sections) ================= */}
+      <section className="bg-cream pt-24 pb-12 px-6">
+        <Reveal className="text-center max-w-3xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <span className="h-[2px] w-10 bg-gold rounded-full" />
+            <span className="eyebrow">What We Offer</span>
+            <span className="h-[2px] w-10 bg-gold rounded-full" />
           </div>
-        </div>
+          <h2 className="text-4xl font-serif font-bold text-ink">
+            Our Premium <span className="text-brand">Services</span>
+          </h2>
+          <p className="text-ink-soft mt-3">
+            Explore complete real estate solutions tailored for you
+          </p>
+        </Reveal>
       </section>
+
+      {servicesData.map((service, i) => (
+        <ServiceSection key={service.id} service={service} index={i} />
+      ))}
 
       {/* ================= ADDITIONAL SECTIONS ================= */}
       <InteriorSection />
