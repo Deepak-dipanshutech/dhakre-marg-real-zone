@@ -129,20 +129,21 @@ const servicesData = [
 
     images: [residentialBanner, residentialBanner, residentialBanner],
 
-    shortDescription: "Private homes with complete ownership.",
+    shortDescription: "Private homes with complete ownership and freedom.",
 
     description:
-      "Beautiful independent houses designed for privacy, comfort and premium living.",
+      "Enjoy complete ownership and freedom with your own independent house — spacious, private and designed for comfortable family living. Best for families looking for privacy and comfort.",
 
+    featuresLabel: "Features",
     features: [
-      "Spacious Rooms",
-      "Private Parking",
+      "Spacious rooms",
+      "Private parking",
       "Balcony",
-      "Garden",
-      "Full Ownership",
+      "Garden space",
+      "Full ownership",
     ],
 
-    facilities: ["Modern Design", "Premium Construction", "Prime Location"],
+    facilities: [],
   },
 
   {

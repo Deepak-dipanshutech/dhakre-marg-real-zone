@@ -69,20 +69,24 @@ export default function ServiceSection({ service, index }) {
             ))}
           </ul>
 
-          {/* Facilities list */}
-          <h4 className="text-lg font-serif font-semibold text-brand mt-6 mb-3">
-            {service.facilitiesLabel || "Facilities"}
-          </h4>
-          <ul className="flex flex-wrap gap-2">
-            {service.facilities.map((f, i) => (
-              <li
-                key={i}
-                className="text-xs font-medium text-ink-soft bg-cream-dark/60 border border-cream-dark rounded-full px-3 py-1.5"
-              >
-                {f}
-              </li>
-            ))}
-          </ul>
+          {/* Facilities list (optional — only if provided) */}
+          {service.facilities?.length > 0 && (
+            <>
+              <h4 className="text-lg font-serif font-semibold text-brand mt-6 mb-3">
+                {service.facilitiesLabel || "Facilities"}
+              </h4>
+              <ul className="flex flex-wrap gap-2">
+                {service.facilities.map((f, i) => (
+                  <li
+                    key={i}
+                    className="text-xs font-medium text-ink-soft bg-cream-dark/60 border border-cream-dark rounded-full px-3 py-1.5"
+                  >
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
           <Link to="/contact" className="btn-primary mt-8">
             Enquire Now
