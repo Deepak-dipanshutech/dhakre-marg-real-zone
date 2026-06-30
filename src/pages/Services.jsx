@@ -22,10 +22,6 @@ const categories = [
   { icon: FaBuilding, label: "Premium Flats" },
   { icon: FaHome, label: "Independent Houses" },
   { icon: FaCity, label: "Builder Floors" },
-  { icon: FaHome, label: "Luxury Villas" },
-  { icon: FaBuilding, label: "Commercial Properties" },
-  { icon: FaHome, label: "Resale Properties" },
-  { icon: FaBuilding, label: "Rental Properties" },
 ];
 
 export default function Services() {
@@ -137,9 +133,11 @@ export default function Services() {
         </Reveal>
       </section>
 
-      {servicesData.map((service, i) => (
-        <ServiceSection key={service.id} service={service} index={i} />
-      ))}
+      {servicesData
+        .filter((service) => !service.hidden)
+        .map((service, i) => (
+          <ServiceSection key={service.id} service={service} index={i} />
+        ))}
 
       {/* ================= ADDITIONAL SECTIONS ================= */}
       <InteriorSection />

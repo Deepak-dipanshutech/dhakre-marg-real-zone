@@ -177,6 +177,7 @@ const servicesData = [
   {
     id: 5,
     slug: "villas",
+    hidden: true,
     number: "05",
     title: "Luxury Villas",
 
@@ -202,6 +203,7 @@ const servicesData = [
   {
     id: 6,
     slug: "commercial-properties",
+    hidden: true,
     number: "06",
     title: "Commercial Properties",
 
@@ -222,6 +224,7 @@ const servicesData = [
   {
     id: 7,
     slug: "resale-properties",
+    hidden: true,
     number: "07",
     title: "Resale Properties",
 
@@ -247,6 +250,7 @@ const servicesData = [
   {
     id: 8,
     slug: "rental-properties",
+    hidden: true,
     number: "08",
     title: "Rental Properties",
 
