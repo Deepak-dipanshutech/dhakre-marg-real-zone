@@ -147,7 +147,10 @@ export default function Services() {
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
               >
-                <div className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-2xl transition border border-cream-dark h-full">
+                <Link
+                  to={`/services/${item.slug}`}
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-2xl transition border border-cream-dark h-full"
+                >
                   {/* Image */}
                   <div className="h-56 overflow-hidden">
                     <img
@@ -170,8 +173,12 @@ export default function Services() {
                     <p className="text-ink-soft mt-2 text-sm">
                       {item.shortDescription}
                     </p>
+
+                    <span className="inline-flex items-center gap-1 text-brand font-medium mt-4 group-hover:gap-2 transition-all">
+                      View Details →
+                    </span>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>

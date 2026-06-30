@@ -59,23 +59,23 @@ const servicesData = [
     shortDescription: "Own your land and build your dream home.",
 
     description:
-      "Residential plots in Greater Noida, Noida Extension and Yamuna Expressway with complete legal documentation and excellent investment opportunities.",
+      "Own your land and build your dream home with premium residential plots in Greater Noida, Noida Extension and along the Yamuna Expressway. Every plot comes with clear legal documentation, registry support and strong long-term investment value — ready for you to build exactly the home you imagine.",
 
     features: [
-      "Prime Location",
-      "Registry Support",
-      "Loan Assistance",
-      "Corner Plots",
-      "Gated Township",
-      "Investment Plots",
+      "Prime location plots",
+      "Registry support",
+      "Loan assistance",
+      "Corner plots",
+      "Gated plot societies",
+      "Investment plots",
     ],
 
     facilities: [
-      "Wide Roads",
-      "Water Supply",
+      "Wide roads",
+      "Water supply",
       "Electricity",
-      "24x7 Security",
-      "Park Area",
+      "Security",
+      "Park area",
     ],
   },
 

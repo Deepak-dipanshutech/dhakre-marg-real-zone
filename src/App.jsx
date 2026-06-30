@@ -9,6 +9,7 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Property from "./pages/Property";
 import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 
 export default function App() {
   return (
@@ -22,8 +23,9 @@ export default function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Services List Page (listing only — no detail page) */}
+          {/* Services List + Detail Pages */}
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<ServiceDetail />} />
 
           {/* Property List Page (listing only — no detail page) */}
           <Route path="/properties" element={<Property />} />
