@@ -156,14 +156,22 @@ const servicesData = [
 
     images: [residentialBanner, residentialBanner, residentialBanner],
 
-    shortDescription: "Premium independent floors.",
+    shortDescription: "Premium independent floor options with modern construction.",
 
     description:
-      "Luxury builder floors with modern architecture and premium finishes.",
+      "Premium independent builder floors with modern construction and quality finishes. Enjoy more privacy than apartments, a separate entry and better space — all at affordable pricing, available in 1 to 4 BHK configurations.",
 
-    features: ["1 BHK", "2 BHK", "3 BHK", "4 BHK"],
+    featuresLabel: "Benefits",
+    features: [
+      "More privacy than flats",
+      "Affordable pricing",
+      "Better space",
+      "Modern interiors",
+      "Separate entry",
+    ],
 
-    facilities: ["Lift", "Parking", "Modular Kitchen", "Separate Entry"],
+    facilitiesLabel: "Configurations",
+    facilities: ["1BHK", "2BHK", "3BHK", "4BHK"],
   },
 
   {
